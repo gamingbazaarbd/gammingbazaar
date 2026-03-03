@@ -1,0 +1,12 @@
+.profile-top {
+    min-height: 80px
+}
+
+.user_style_profile {
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(180deg, #fff, #fd5800);
+    background-origin: border-box;
+    border: 8px double transparent;
+    border-radius: 50%;
+    height: 110px
+}

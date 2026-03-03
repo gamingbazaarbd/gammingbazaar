@@ -1,0 +1,67 @@
+.buttonizer[data-v-33701847] {
+    bottom: 40px;
+    position: fixed;
+    right: 40px;
+    z-index: 99
+}
+
+.buttonizer_whatsapp[data-v-33701847]:hover {
+    background: #f4245d !important
+}
+
+.ease-in-out[data-v-33701847] {
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1)
+}
+
+.duration-300[data-v-33701847] {
+    transition-duration: .3s
+}
+
+.translate-x-full[data-v-33701847] {
+    --tw-translate-x: 100%
+}
+
+.translate-x-0[data-v-33701847] {
+    --tw-translate-x: 0px
+}
+
+.footer_nav a[data-v-33701847] {
+    background: unset !important;
+    color: #bbb8b8;
+    font-family: "Bree Serif", serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 23px
+}
+
+.footer_nav .nuxt-link-active[data-v-33701847] {
+    color: #fff !important
+}
+
+.footer-contact-icon1[data-v-33701847] {
+    border: 1px solid #9c9c9c
+}
+
+.pwa-toast {
+    border: 1px solid #8885;
+    border-radius: 4px;
+    bottom: 0;
+    margin: 16px;
+    padding: 12px;
+    position: fixed;
+    right: 0;
+    text-align: left;
+    z-index: 10001 !important
+}
+
+.pwa-toast .message {
+    margin-bottom: 8px
+}
+
+.pwa-toast button {
+    border: 1px solid #8885;
+    border-radius: 2px;
+    margin-right: 5px;
+    outline: none;
+    padding: 3px 10px
+}

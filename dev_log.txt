@@ -1,0 +1,223 @@
+
+> user-new@0.1.0 dev
+> next dev
+
+  Γû▓ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ Γ£ô Starting...
+ Γ£ô Ready in 5.6s
+ Γùï Compiling / ...
+ Γ£ô Compiled / in 23.8s (769 modules)
+ Γ£ô Compiled in 801ms (328 modules)
+ GET / 200 in 31706ms
+ Γùï Compiling /_error ...
+ Γ£ô Compiled /_error in 2.7s (972 modules)
+ GET /favicon.ico 500 in 3455ms
+ Γùï Compiling /topup ...
+ Γ£ô Compiled /topup in 677ms (988 modules)
+ Γ£ô Compiled /contact in 445ms (982 modules)
+ Γ£ô Compiled /_error in 289ms (998 modules)
+ GET /favicon.ico 500 in 365ms
+ GET /favicon.ico 500 in 5ms
+ Γùï Compiling /_not-found ...
+ Γ£ô Compiled /_not-found in 676ms (987 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 923ms
+ GET / 200 in 6374ms
+ GET /favicon.ico 500 in 67ms
+ GET / 200 in 387ms
+ GET /favicon.ico 500 in 13ms
+ GET /favicon.ico 500 in 4ms
+ Γùï Compiling /topup/[code] ...
+ Γ£ô Compiled /topup/[code] in 776ms (1009 modules)
+ GET /favicon.ico 500 in 32ms
+ GET /favicon.ico 500 in 7ms
+ GET /favicon.ico 500 in 5ms
+ GET /favicon.ico 500 in 6ms
+ Γ£ô Compiled /profile in 314ms (1001 modules)
+ GET /favicon.ico 500 in 10ms
+ Γ£ô Compiled /_not-found in 243ms (1004 modules)
+ GET /logout 404 in 226ms
+ GET /favicon.ico 500 in 13ms
+ GET /favicon.ico 500 in 7ms
+ GET / 200 in 42ms
+ GET /favicon.ico 500 in 9ms
+ GET /logout 404 in 67ms
+ GET /favicon.ico 500 in 7ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 63ms
+ GET /favicon.ico 500 in 9ms
+ GET /favicon.ico 500 in 8ms
+ GET /favicon.ico 500 in 5ms
+ GET /favicon.ico 500 in 8ms
+ GET / 200 in 43ms
+ GET / 200 in 43ms
+ GET /favicon.ico 500 in 7ms
+ GET / 200 in 18ms
+ GET /favicon.ico 500 in 12ms
+ Γ£ô Compiled in 1247ms (1013 modules)
+ GET / 200 in 372ms
+ Γ£ô Compiled /_error in 475ms (1001 modules)
+ GET /favicon.ico 500 in 509ms
+ Γ£ô Compiled /login in 303ms (1007 modules)
+ GET /login 200 in 539ms
+ GET /favicon.ico 500 in 14ms
+ GET /favicon.ico 500 in 8ms
+ GET / 200 in 43ms
+ GET /favicon.ico 500 in 9ms
+ Γ£ô Compiled in 624ms (1015 modules)
+ Γ£ô Compiled in 1314ms (1015 modules)
+ Γ£ô Compiled in 280ms (1015 modules)
+ Γ£ô Compiled in 157ms (525 modules)
+ Γ£ô Compiled in 996ms (1015 modules)
+ Γ£ô Compiled in 389ms (1015 modules)
+ GET / 200 in 147ms
+ Γ£ô Compiled /_error in 379ms (1003 modules)
+ GET /favicon.ico 500 in 408ms
+ GET / 200 in 121ms
+ GET /favicon.ico 500 in 7ms
+ GET / 200 in 26ms
+ GET /favicon.ico 500 in 6ms
+ Γ£ô Compiled in 560ms (1017 modules)
+ GET / 200 in 61ms
+ GET /favicon.ico 500 in 16ms
+ GET / 200 in 41ms
+ GET /favicon.ico 500 in 6ms
+ Γ£ô Compiled in 46s (1015 modules)
+ GET / 200 in 41172ms
+ Γ£ô Compiled /_error in 303ms (1003 modules)
+ GET /favicon.ico 500 in 491ms
+ Γùï Compiling /login ...
+ Γ£ô Compiled /login in 721ms (495 modules)
+ GET /favicon.ico 500 in 20ms
+ GET /favicon.ico 500 in 5ms
+ Γ£ô Compiled in 347ms (1021 modules)
+ Γ£ô Compiled in 572ms (1021 modules)
+ Γ£ô Compiled in 284ms (1021 modules)
+ Γ£ô Compiled in 257ms (1021 modules)
+ Γ£ô Compiled in 399ms (1021 modules)
+ Γ£ô Compiled in 333ms (1021 modules)
+ Γ£ô Compiled in 316ms (1021 modules)
+ Γ£ô Compiled in 305ms (1021 modules)
+ Γ£ô Compiled in 322ms (1021 modules)
+ GET /favicon.ico 500 in 17ms
+ GET /favicon.ico 500 in 7ms
+ Γ£ô Compiled in 675ms (1016 modules)
+ GET /favicon.ico 500 in 22ms
+ Γ£ô Compiled /contact in 204ms (495 modules)
+ GET /favicon.ico 500 in 15ms
+ GET /favicon.ico 500 in 5ms
+ Γ£ô Compiled /_not-found in 432ms (1010 modules)
+ GET /admin 404 in 620ms
+ GET /favicon.ico 500 in 11ms
+ GET /favicon.ico 500 in 5ms
+ GET /favicon.ico 500 in 4ms
+ GET /favicon.ico 500 in 3ms
+ Γùï Compiling /register ...
+ Γ£ô Compiled /register in 753ms (1016 modules)
+ GET /favicon.ico 500 in 11ms
+ GET /favicon.ico 500 in 5ms
+ GET /profile 200 in 155ms
+ GET /favicon.ico 500 in 9ms
+ Γùï Compiling /profile/order ...
+ Γ£ô Compiled /profile/order in 599ms (1019 modules)
+ GET /favicon.ico 500 in 9ms
+ GET /favicon.ico 500 in 5ms
+ Γùï Compiling /profile/my-codes ...
+ Γ£ô Compiled /profile/my-codes in 816ms (1020 modules)
+ GET /favicon.ico 500 in 14ms
+ Γ£ô Compiled /profile/add-money in 290ms (1026 modules)
+ GET /favicon.ico 500 in 14ms
+ GET /favicon.ico 500 in 5ms
+ GET /favicon.ico 500 in 3ms
+ GET /favicon.ico 500 in 7ms
+ Γ£ô Compiled in 1132ms (1023 modules)
+ Γ£ô Compiled in 326ms (1023 modules)
+ Γ£ô Compiled in 360ms (1023 modules)
+ Γ£ô Compiled in 314ms (1023 modules)
+ Γ£ô Compiled in 395ms (1023 modules)
+ Γ£ô Compiled in 689ms (1023 modules)
+ Γ£ô Compiled in 295ms (1023 modules)
+ Γ£ô Compiled in 278ms (1023 modules)
+ Γ£ô Compiled in 273ms (1023 modules)
+ Γ£ô Compiled /_not-found in 489ms (1012 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 747ms
+ Γ£ô Compiled in 429ms (1026 modules)
+ GET / 200 in 133ms
+ GET / 200 in 63ms
+ Γ£ô Compiled /_error in 399ms (1014 modules)
+ GET /favicon.ico 500 in 431ms
+ GET / 200 in 65ms
+ GET /favicon.ico 500 in 8ms
+ GET / 200 in 6548ms
+ GET /favicon.ico 500 in 54ms
+ Γùï Compiling /profile ...
+ Γ£ô Compiled /profile in 1289ms (494 modules)
+ GET /favicon.ico 500 in 441ms
+ Γùï Compiling /topup ...
+ Γ£ô Compiled /topup in 824ms (493 modules)
+ GET /favicon.ico 500 in 15ms
+ GET /favicon.ico 500 in 4ms
+ GET / 200 in 672ms
+ GET /favicon.ico 500 in 6ms
+ GET / 200 in 327ms
+ GET /favicon.ico 500 in 7ms
+ GET /favicon.ico 500 in 8ms
+ GET /favicon.ico 500 in 29ms
+ GET /favicon.ico 500 in 4ms
+ GET /favicon.ico 500 in 17ms
+ GET /favicon.ico 500 in 3ms
+ GET /favicon.ico 500 in 31ms
+ GET /favicon.ico 500 in 3ms
+ Γùï Compiling /profile/order ...
+ Γ£ô Compiled /profile/order in 735ms (492 modules)
+ GET /favicon.ico 500 in 836ms
+ GET /favicon.ico 500 in 3ms
+ Γ£ô Compiled /profile/my-codes in 204ms (493 modules)
+ GET /favicon.ico 500 in 21ms
+ GET /favicon.ico 500 in 7ms
+ Γùï Compiling /profile/transactions ...
+ Γ£ô Compiled /profile/transactions in 7.9s (1029 modules)
+ GET /favicon.ico 500 in 12ms
+ GET /favicon.ico 500 in 5ms
+ GET /favicon.ico 500 in 5ms
+ GET /favicon.ico 500 in 6ms
+ GET / 200 in 379ms
+ GET /favicon.ico 500 in 59ms
+ GET / 200 in 326ms
+ GET /favicon.ico 500 in 4ms
+ GET / 200 in 342ms
+ GET /favicon.ico 500 in 12ms
+ GET / 200 in 350ms
+ GET /favicon.ico 500 in 19ms
+ GET / 200 in 481ms
+ GET /favicon.ico 500 in 6ms
+ GET / 200 in 28ms
+ GET / 200 in 40ms
+ GET /favicon.ico 500 in 7ms
+ GET / 200 in 52ms
+ GET /favicon.ico 500 in 12ms
+ GET /favicon.ico 500 in 4ms
+ Γùï Compiling /_not-found ...
+ Γ£ô Compiled /_not-found in 713ms (1014 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1162ms
+ GET /profile/transactions 200 in 141ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 19ms
+ GET /favicon.ico 500 in 35ms
+ GET /profile/transactions 200 in 68ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 24ms
+ GET /favicon.ico 500 in 5ms
+ Γ£ô Compiled /profile/add-money in 152ms (493 modules)
+ GET /favicon.ico 500 in 8ms
+ GET /profile/add-money 200 in 88ms
+ GET /favicon.ico 500 in 8ms
+ GET /profile/add-money 200 in 62ms
+ GET /favicon.ico 500 in 11ms
+ GET /favicon.ico 500 in 7ms
+ Γ£ô Compiled /contact in 123ms (495 modules)
+ GET /favicon.ico 500 in 14ms
+ GET /favicon.ico 500 in 6ms
+ GET /favicon.ico 500 in 9ms
+ GET /favicon.ico 500 in 4ms
+ GET / 200 in 85ms
+ GET /favicon.ico 500 in 6ms

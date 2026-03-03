@@ -1,0 +1,79 @@
+
+> user-new@0.1.0 dev
+> next dev
+
+  Γû▓ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ Γ£ô Starting...
+ Γ£ô Ready in 3.5s
+ Γùï Compiling / ...
+ Γ£ô Compiled / in 10.4s (1576 modules)
+ Γ£ô Compiled in 668ms (731 modules)
+ GET / 200 in 15232ms
+ GET / 200 in 4442ms
+ Γùï Compiling /_error ...
+ Γ£ô Compiled /_error in 1545ms (1779 modules)
+ GET /favicon.ico 500 in 1906ms
+ GET / 200 in 4ms
+ GET / 200 in 8425ms
+ GET /favicon.ico 500 in 15ms
+ GET / 200 in 7888ms
+ GET /favicon.ico 500 in 17ms
+ GET / 200 in 10621ms
+ GET /favicon.ico 500 in 34ms
+ Γùï Compiling /_not-found ...
+ Γ£ô Compiled /_not-found in 996ms (1782 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1616ms
+ GET /_next/static/chunks/app/LayoutGroupContext.mjs.map 404 in 47ms
+ GET / 200 in 4505ms
+ GET / 200 in 11566ms
+ GET /favicon.ico 500 in 207ms
+ GET / 200 in 62ms
+ GET / 200 in 2028ms
+ GET / 200 in 4818ms
+ GET /favicon.ico 500 in 30ms
+ Γùï Compiling /topup ...
+ Γ£ô Compiled /topup in 11.6s (1783 modules)
+ Γùï Compiling /contact ...
+ Γ£ô Compiled /contact in 19.6s (1789 modules)
+ Γùï Compiling /_error ...
+ Γ£ô Compiled /_error in 1239ms (1791 modules)
+ GET /favicon.ico 500 in 2267ms
+ HEAD / 200 in 4256ms
+ GET / 200 in 8700ms
+ GET /contact 200 in 163ms
+ GET /favicon.ico 500 in 104ms
+ GET / 200 in 4842ms
+ GET /favicon.ico 500 in 30ms
+   Reload env: .env.local
+   Reload env: .env.local
+   Reload env: .env.local
+   Reload env: .env.local
+   Reload env: .env.local
+ Γ£ô Compiled in 77.2s (1809 modules)
+ GET / 200 in 15377ms
+ GET / 200 in 43ms
+ Γùï Compiling /_error ...
+ Γ£ô Compiled /_error in 851ms (1791 modules)
+ GET /favicon.ico 500 in 1002ms
+ GET /undefined/api/frontend-settings 404 in 1293ms
+ GET /undefined/api/frontend-settings 404 in 56ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 26ms
+ GET / 200 in 89ms
+ GET /_next/static/chunks/app/LayoutGroupContext.mjs.map 404 in 50ms
+ GET / 200 in 149ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 37ms
+ GET /_next/static/chunks/app/LayoutGroupContext.mjs.map 404 in 65ms
+ GET /favicon.ico 500 in 5ms
+ GET /undefined/api/frontend-settings 404 in 33ms
+ GET /undefined/api/frontend-settings 404 in 65ms
+   Reload env: .env.local
+ ΓÜá Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ Γ£ô Compiled in 22.5s (1809 modules)
+ GET / 200 in 6265ms
+ Γùï Compiling /_error ...
+ Γ£ô Compiled /_error in 620ms (1788 modules)
+ GET /favicon.ico 500 in 831ms
+[?25h

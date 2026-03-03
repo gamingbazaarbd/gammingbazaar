@@ -1,0 +1,1 @@
+import { bO as i, bP as n, bH as t } from "./entry.6509464e.js"; import { u as a } from "./cookie.a1f0674b.js"; const u = i(e => { const o = a("token"); if (a("user"), !o.value && (e == null ? void 0 : e.name) !== "login") return n(), t("/login") }); export { u as default };

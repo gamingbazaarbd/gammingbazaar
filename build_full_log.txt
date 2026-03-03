@@ -1,0 +1,65 @@
+
+> user-new@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+
+./src/components/layout/Header.tsx
+12:28  Warning: 'setIsSearchActive' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+37:19  Warning: 'response' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+50:11  Warning: 'containerStyle' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/layout/Sidebar.tsx
+25:11  Warning: 'containerStyle' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/topup/PaymentMethods.tsx
+2:10  Warning: 'div' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/topup/TopUpDetailsClient.tsx
+164:26  Warning: '_e' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/22) ...
+   Generating static pages (5/22) 
+   Generating static pages (10/22) 
+   Generating static pages (16/22) 
+ Γ£ô Generating static pages (22/22)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+Γöî ╞Æ /                                    1.9 kB         97.9 kB
+Γö£ Γùï /_not-found                          873 B          88.2 kB
+Γö£ Γùï /contact                             2.59 kB         114 kB
+Γö£ Γùï /forgot-password                     1.88 kB        97.9 kB
+Γö£ Γùï /login                               2.9 kB         98.9 kB
+Γö£ Γùï /payment-cancel                      1.52 kB        97.5 kB
+Γö£ Γùï /payment-success                     2.44 kB        98.5 kB
+Γö£ Γùï /profile                             3.24 kB        99.3 kB
+Γö£ Γùï /profile/add-money                   2.75 kB         111 kB
+Γö£ Γùï /profile/my-codes                    4.12 kB         103 kB
+Γö£ Γùï /profile/order                       2.96 kB          99 kB
+Γö£ Γùï /profile/transactions                2.33 kB        89.6 kB
+Γö£ Γùï /register                            2.82 kB        98.8 kB
+Γö£ Γùï /reset-password                      2 kB           89.3 kB
+Γö£ Γùï /robots.txt                          0 B                0 B
+Γö£ Γùï /search                              6.9 kB          103 kB
+Γö£ Γùï /sitemap.xml                         0 B                0 B
+Γö£ ╞Æ /topup                               174 B          96.2 kB
+Γö£ ╞Æ /topup/[code]                        6.49 kB         103 kB
+Γöö Γùï /wallet-payment-success              1.96 kB          98 kB
++ First Load JS shared by all            87.3 kB
+  Γö£ chunks/117-521b3ac26411125a.js       31.7 kB
+  Γö£ chunks/fd9d1056-411c0e320fe15393.js  53.6 kB
+  Γöö other shared chunks (total)          1.95 kB
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+
