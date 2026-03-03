@@ -22,7 +22,7 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
     const [wallet, setWallet] = useState<any>(null);
     
     // Manual Payment State
-    const [showManualPayment, setShowManualPayment] = useState(true);
+    const [showManualPayment, setShowManualPayment] = useState(false);
     const [paymentMethods, setPaymentMethods] = useState<any[]>([]);
     const [selectedManualMethod, setSelectedManualMethod] = useState<any>(null);
     const [senderNumber, setSenderNumber] = useState("");
@@ -94,6 +94,8 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
         setQuantity(1);
         setTotalAmount(field.currency_amount);
         setErrorRecharge(null);
+        setSelectedPaymentMethod("manual");
+        setShowManualPayment(true);
 
         setTimeout(() => {
             if (paymentSectionRef.current) {
@@ -176,7 +178,7 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
                     } else {
                         router.push('/profile/add-money');
                     }
-                } catch (_e) { router.push('/profile/add-money'); } finally { setLoading(false); }
+                } catch { router.push('/profile/add-money'); } finally { setLoading(false); }
             } else {
                 router.push('/profile/add-money');
             }

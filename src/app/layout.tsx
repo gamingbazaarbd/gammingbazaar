@@ -17,10 +17,10 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.topupstorebd.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.codvouchers.com'),
   title: {
-    template: '%s | Topup Store Bangladesh',
-    default: 'Topup Store Bangladesh - Premium Game Top Up & Gift Cards',
+    template: '%s | Cod Vouchers',
+    default: 'Cod Vouchers - Premium Game Top Up & Gift Cards',
   },
   manifest: '/manifest.json',
   icons: {
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   },
   description: 'Premium game top-up app in Bangladesh, offering seamless and automatic Bkash, Nagad payments for Free Fire, PUBG, and more.',
   keywords: ['topup bangladesh', 'game top up', 'free fire topup bd', 'pubg uc buy bangladesh', 'diamond topup bKash', 'instant game topup'],
-  authors: [{ name: 'Topup Store' }],
+  authors: [{ name: 'Cod Vouchers' }],
   openGraph: {
-    title: 'Topup Store Bangladesh - Premium Game Top Up',
+    title: 'Cod Vouchers - Premium Game Top Up',
     description: 'Get your game credits instantly! Premium games top up app in Bangladesh with automated delivery.',
     url: '/',
-    siteName: 'Topup Store Bangladesh',
+    siteName: 'Cod Vouchers',
     locale: 'en_US',
     type: 'website',
   },
