@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 // Fetch all products dynamically for the sitemap
 async function fetchProducts() {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/all-products`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/all-products`, { next: { revalidate: 60 } });
     if (!res.ok) return [];
     
     const data = await res.json();
