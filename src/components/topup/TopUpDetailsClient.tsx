@@ -30,6 +30,7 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
     
     const manualPaymentRef = useRef<HTMLDivElement>(null);
     const nextStepRef = useRef<HTMLDivElement>(null);
+    const paymentSectionRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const storedUser = localStorage.getItem('user-info');
@@ -95,8 +96,8 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
         setErrorRecharge(null);
 
         setTimeout(() => {
-            if (nextStepRef.current) {
-                nextStepRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            if (paymentSectionRef.current) {
+                paymentSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         }, 150);
     };
@@ -301,7 +302,7 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
                     </div>
 
                     {/* Payment Methods */}
-                    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div ref={paymentSectionRef} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                         <div className="bg-gray-50 p-4 border-b border-gray-100 flex items-center gap-3">
                             <span className="bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</span>
                             <h2 className="text-lg font-bold text-gray-800">Payment Method</h2>

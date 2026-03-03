@@ -8,13 +8,13 @@ async function fetchProducts() {
     
     const data = await res.json();
     return data;
-  } catch (error) {
+  } catch {
     return [];
   }
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.topupstorebd.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.codvouchers.com'
   
   const products = await fetchProducts();
   const productUrls: MetadataRoute.Sitemap = products.map((product: any) => ({
@@ -54,6 +54,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/forgot-password`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
     },
     ...productUrls,
   ]
