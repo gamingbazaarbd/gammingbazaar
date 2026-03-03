@@ -4,7 +4,14 @@ import TopUpDetailsClient from '@/components/topup/TopUpDetailsClient';
 
 async function fetchProductDetails(code: string) {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/topup-detail/${code}`, { next: { revalidate: 60 } });
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.codvouchers.com';
+        const res = await fetch(`${apiUrl}/api/topup-detail/${code}`, {
+            next: { revalidate: 60 },
+            headers: {
+                'Accept': 'application/json',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+            }
+        });
         if (!res.ok) return null;
         return await res.json();
     } catch {

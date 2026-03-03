@@ -8,8 +8,13 @@ import NoticeBanner from '@/components/home/NoticeBanner';
 
 async function fetchSiteSettings() {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/frontend-settings`, {
-            next: { revalidate: 60 }
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.codvouchers.com';
+        const res = await fetch(`${apiUrl}/api/frontend-settings`, {
+            next: { revalidate: 60 },
+            headers: {
+                'Accept': 'application/json',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+            }
         });
 
         if (!res.ok) return null;
@@ -22,8 +27,13 @@ async function fetchSiteSettings() {
 
 async function fetchProducts(page: number) {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api?page=${page}`, {
-            next: { revalidate: 60 }
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.codvouchers.com';
+        const res = await fetch(`${apiUrl}/api?page=${page}`, {
+            next: { revalidate: 60 },
+            headers: {
+                'Accept': 'application/json',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+            }
         });
 
         if (!res.ok) return [];
