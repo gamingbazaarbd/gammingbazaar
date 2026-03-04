@@ -73,7 +73,7 @@ export default function OrderPage() {
                                         <div className="flex flex-col md:flex-row justify-between md:items-center gap-4 border-b border-gray-100 pb-4 mb-4">
                                             <div className="flex flex-col gap-1">
                                                 <div className="flex items-center gap-2">
-                                                    <span className="text-xs font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Order #{order.order_id || order.id}</span>
+                                                    <span className="text-xs font-bold bg-gray-100 text-gray-600 ">Order ID: #{order.order_id || order.id}</span>
                                                 </div>
                                                 <div>
                                                     <p className="text-[10px] text-gray-500 uppercase tracking-tighter">Transaction ID</p>
