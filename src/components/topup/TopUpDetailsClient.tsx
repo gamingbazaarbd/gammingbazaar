@@ -94,8 +94,8 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
         setQuantity(1);
         setTotalAmount(field.currency_amount);
         setErrorRecharge(null);
-        setSelectedPaymentMethod("manual");
-        setShowManualPayment(true);
+        // setSelectedPaymentMethod("manual");
+        // setShowManualPayment(true);
 
         setTimeout(() => {
             if (nextStepRef.current) {
