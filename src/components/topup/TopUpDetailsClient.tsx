@@ -146,90 +146,49 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
     };
 
     const handleBuyNow = async () => {
-    if (!validateSubmission()) return;
+        if (!validateSubmission()) return;
+        
+        const productDetails = {
+            ...product, selectedRechargeType, selectedPaymentMethod, quantity, totalAmount, accountInfo,
+            productId: product.id, full_name: user.name, email: user.email, amount: totalAmount, user_id: user.id
+        };
 
-    // Base product details for all payments
-    const baseProductDetails = {
-        ...product,
-        selectedRechargeType,
-        quantity,
-        totalAmount,
-        accountInfo,
-        productId: product.id,
-        full_name: user.name,
-        email: user.email,
-        amount: totalAmount,
-        user_id: user.id
-    };
-
-    if (selectedPaymentMethod === "instant") {
-        setLoading(true);
-        try {
-            const instantDetails = {
-                ...baseProductDetails,
-                selectedPaymentMethod: "instant",
-                payment_type: "instant",
-                order_number: `INSTANT-${Date.now()}-${Math.floor(Math.random() * 1000)}`
-            };
-
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/payment/initiate`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json", Accept: "application/json" },
-                body: JSON.stringify(instantDetails)
-            });
-
-            const data = await res.json();
-            if (data.payment_url) {
-                window.location.href = data.payment_url;
-            } else {
-                setError(data.message || "Payment initiation failed");
-            }
-        } catch (e: any) {
-            setError(e.message);
-        } finally {
-            setLoading(false);
-        }
-
-    } else if (selectedPaymentMethod === "wallet") {
-        if (wallet && wallet.balance >= totalAmount) {
+        if (selectedPaymentMethod === "instant") {
             setLoading(true);
             try {
-                const walletDetails = {
-                    ...baseProductDetails,
-                    selectedPaymentMethod: "wallet",
-                    payment_type: "wallet",
-                    order_number: `WALLET-${Date.now()}-${Math.floor(Math.random() * 1000)}`
-                };
-
-                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/payment/wallet`, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json", Accept: "application/json" },
-                    body: JSON.stringify(walletDetails)
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/payment/initiate`, {
+                    method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                    body: JSON.stringify(productDetails)
                 });
-
                 const data = await res.json();
-                if (data.status === "success") {
-                    setWallet({ ...wallet, balance: wallet.balance - totalAmount });
-                    router.push("/profile/order");
-                } else {
-                    router.push("/profile/add-money");
-                }
-            } catch {
-                router.push("/profile/add-money");
-            } finally {
-                setLoading(false);
+                if (data.payment_url) window.location.href = data.payment_url;
+                else setError(data.message || "Payment init failed");
+            } catch (e: any) { setError(e.message); } finally { setLoading(false); }
+        } else if (selectedPaymentMethod === "wallet") {
+            if (wallet && wallet.balance >= totalAmount) {
+                setLoading(true);
+                try {
+                    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/payment/wallet`, {
+                        method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                        body: JSON.stringify(productDetails)
+                    });
+                    const data = await res.json();
+                    if (data.status === "success") {
+                        setWallet({ ...wallet, balance: wallet.balance - totalAmount });
+                        router.push('/profile/order');
+                    } else {
+                        router.push('/profile/add-money');
+                    }
+                } catch { router.push('/profile/add-money'); } finally { setLoading(false); }
+            } else {
+                router.push('/profile/add-money');
             }
+        } else if (selectedPaymentMethod === "manual") {
+            setShowManualPayment(true);
         } else {
-            router.push("/profile/add-money");
+            setError("Please select a payment method.");
         }
-
-    } else if (selectedPaymentMethod === "manual") {
-        setShowManualPayment(true);
-
-    } else {
-        setError("Please select a payment method.");
-    }
-};
+    };
 
     const handleManualPaymentSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
