@@ -149,8 +149,9 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
         if (!validateSubmission()) return;
         
         const productDetails = {
-            ...product, selectedRechargeType, selectedPaymentMethod, quantity, totalAmount, accountInfo,
-            productId: product.id, full_name: user.name, email: user.email, amount: totalAmount, user_id: user.id
+            ...product, selectedRechargeType, selectedPaymentMethod: "Wallet", quantity, totalAmount, accountInfo,
+            productId: product.id, full_name: user.name, email: user.email, amount: totalAmount, user_id: user.id,
+            payment_method_id: selectedManualMethod.id
         };
 
         if (selectedPaymentMethod === "instant") {
