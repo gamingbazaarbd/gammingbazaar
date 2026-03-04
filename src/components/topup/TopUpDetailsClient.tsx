@@ -101,7 +101,7 @@ export default function TopUpDetailsClient({ product }: { product: any }) {
             if (nextStepRef.current) {
                 nextStepRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
-        }, 150);
+        }, 80);
     };
 
     const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
