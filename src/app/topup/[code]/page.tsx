@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: { code: string } })
             title: title,
             description: description,
             images: ogImageUrl ? [{ url: ogImageUrl }] : [],
-            url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.codvouchers.com'}/topup/${params.code}`,
+            url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gammingbazaar.com'}/topup/${params.code}`,
             type: 'website',
         },
         twitter: {
