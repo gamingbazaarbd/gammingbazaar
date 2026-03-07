@@ -10,11 +10,11 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://backend.codvouchers.com/api/:path*',
+        destination: 'https://backend.gammingbazaar.com/api/:path*',
       },
       {
         source: '/storage/:path*',
-        destination: 'https://backend.codvouchers.com/storage/:path*',
+        destination: 'https://backend.gammingbazaar.com/storage/:path*',
       }
     ];
   },

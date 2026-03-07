@@ -4,7 +4,7 @@ import TopUpDetailsClient from '@/components/topup/TopUpDetailsClient';
 
 async function fetchProductDetails(code: string) {
     try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.codvouchers.com';
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.gammingbazaar.com';
         const res = await fetch(`${apiUrl}/api/topup-detail/${code}`, {
             next: { revalidate: 60 },
             headers: {

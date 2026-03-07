@@ -8,7 +8,7 @@ import NoticeBanner from '@/components/home/NoticeBanner';
 
 async function fetchSiteSettings() {
     try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.codvouchers.com';
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.gammingbazaar.com';
         const res = await fetch(`${apiUrl}/api/frontend-settings`, {
             next: { revalidate: 60 },
             headers: {
@@ -27,7 +27,7 @@ async function fetchSiteSettings() {
 
 async function fetchProducts(page: number) {
     try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.codvouchers.com';
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend.gammingbazaar.com';
         const res = await fetch(`${apiUrl}/api?page=${page}`, {
             next: { revalidate: 60 },
             headers: {
