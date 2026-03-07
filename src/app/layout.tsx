@@ -17,7 +17,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.codvouchers.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gammingbazaar.com'),
   title: {
     template: '%s | Cod Vouchers',
     default: 'Cod Vouchers - Premium Game Top Up & Gift Cards',
