@@ -19,23 +19,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gammingbazaar.com'),
   title: {
-    template: '%s | Cod Vouchers',
-    default: 'Cod Vouchers - Premium Game Top Up & Gift Cards',
+    template: '%s | Gamming Bazaar',
+    default: 'Gamming Bazaar - Premium Game Top Up & Gift Cards',
   },
   manifest: '/manifest.json',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
-  },
   description: 'Premium game top-up app in Bangladesh, offering seamless and automatic Bkash, Nagad payments for Free Fire, PUBG, and more.',
   keywords: ['topup bangladesh', 'game top up', 'free fire topup bd', 'pubg uc buy bangladesh', 'diamond topup bKash', 'instant game topup'],
-  authors: [{ name: 'Cod Vouchers' }],
+  authors: [{ name: 'Gamming Bazaar' }],
   openGraph: {
-    title: 'Cod Vouchers - Premium Game Top Up',
+    title: 'Gamming Bazaar - Premium Game Top Up',
     description: 'Get your game credits instantly! Premium games top up app in Bangladesh with automated delivery.',
     url: '/',
-    siteName: 'Cod Vouchers',
+    siteName: 'Gamming Bazaar',
     locale: 'en_US',
     type: 'website',
   },

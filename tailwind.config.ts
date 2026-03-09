@@ -13,7 +13,7 @@ const config: Config = {
         foreground: "#E2E8F0", // Slate 200 light gray text
         card: "#131823",      // Slightly lighter dark for cards
         primary: {
-          DEFAULT: "#FF3366", // Vibrant Neon Pink/Red for accents (matches COD Vouchers)
+          DEFAULT: "#FF3366", // Vibrant Neon Pink/Red for accents (matches Gamming Bazaar)
           hover: "#E62E5C",
         },
         secondary: {
