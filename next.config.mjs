@@ -15,11 +15,6 @@ const nextConfig = {
       {
         source: '/storage/:path*',
         destination: 'https://backend.gammingbazaar.com/storage/:path*',
-      },
-      {
-        source: '/product/:slug',
-        destination: '/topup/:slug',
-        permanent: true,
       }
     ];
   },
